@@ -34,7 +34,7 @@ const ModalWrapper = styled.div`
 `;
 const ModalWindow = styled.div`
   width: 400px;
-  height: 200px;
+  height: 250px;
   border-radius: 13px;
   background: #ddd;
   transition: 1s;
