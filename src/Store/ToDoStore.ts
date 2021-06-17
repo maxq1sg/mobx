@@ -9,7 +9,7 @@ export interface ITodo{
 }
 
 class TodoStore{
-    todos:ITodo[]=[]
+    todos:ITodo[]=[{id:uuidv4(),completed:true,text:"maximka"}]
     constructor(todosFromStorage:ITodo[]){
         this.todos = todosFromStorage
         makeObservable(this,{
