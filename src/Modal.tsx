@@ -38,7 +38,7 @@ const ModalWindow = styled.div`
   border-radius: 13px;
   background: #ddd;
   transition: 1s;
-  padding: 20px;
+  padding: 25px;
   animation: ${appear} 0.5s;
 `;
 const Modal = ({
