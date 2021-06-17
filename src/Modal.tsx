@@ -47,7 +47,7 @@ const Modal = ({
   id,
   children,
 }: {
-  isActive: boolean;
+  isActive: any;
   setIsActive: any;
   id: string;
   children: any;
