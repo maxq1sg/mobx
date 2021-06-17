@@ -58,6 +58,7 @@ const Modal = ({
         <ModalWrapper onClick={(e) => setIsActive(false)}>
           <ModalWindow onClick={(e) => e.stopPropagation()}>
             {children}
+            
           </ModalWindow>
         </ModalWrapper>
       )}
