@@ -30,8 +30,7 @@ const ModalWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: ${(props: { isActive: boolean }) => (props.isActive ? "1" : "0")};
-  transition: opacity 1s;
+  animation: ${fadeIn} 0.5s;
 `;
 const ModalWindow = styled.div`
   width: 400px;
@@ -40,14 +39,7 @@ const ModalWindow = styled.div`
   background: white;
   transition: 1s;
   padding: 20px;
-    ${(props: { isActive: boolean }) =>
-      props.isActive
-        ? css`
-            transform: scale(1);
-          `
-        : css`
-            transform: scale(0);
-          `};
+  animation: ${appear} 0.5s;
 `;
 const Modal = ({
   isActive,
@@ -63,8 +55,8 @@ const Modal = ({
   return (
     <>
       {isActive && (
-        <ModalWrapper isActive={isActive} onClick={(e) => setIsActive(false)}>
-          <ModalWindow isActive={isActive} onClick={(e) => e.stopPropagation()}>
+        <ModalWrapper onClick={(e) => setIsActive(false)}>
+          <ModalWindow onClick={(e) => e.stopPropagation()}>
             {children}
           </ModalWindow>
         </ModalWrapper>
