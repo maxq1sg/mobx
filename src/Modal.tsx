@@ -23,7 +23,7 @@ const appear = keyframes`
 const ModalWrapper = styled.div`
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   left: 0;
