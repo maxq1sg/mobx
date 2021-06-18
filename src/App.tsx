@@ -18,6 +18,7 @@ function App() {
   useEffect(() => {
     console.log("hello world");
   }, []);
+  const [state, setState] = React.useState("");
   return (
     <FlexWrapper>
       <Navbar></Navbar>
