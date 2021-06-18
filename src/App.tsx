@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TodoList from "./TodoList";
 import Comments from "./Comments";
 import Modal from "./Modal";
@@ -15,6 +15,9 @@ const FlexWrapper = styled.div`
   flex-wrap: nowrap;
 `;
 function App() {
+  useEffect(() => {
+    console.log("hello world");
+  }, []);
   return (
     <FlexWrapper>
       <Navbar></Navbar>
