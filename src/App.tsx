@@ -7,12 +7,12 @@ const Content = styled.div`
   flex: 1 0;
 `;
 const Navbar = styled.nav`
-  background: blue;
+  background: white;
   flex: 40px 0 1;
 `;
 const FlexWrapper = styled.div`
   display: flex;
-  flex-wrap: rap;
+  flex-wrap: nowrap;
 `;
 function App() {
   useEffect(() => {
