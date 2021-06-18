@@ -15,6 +15,7 @@ const FlexWrapper = styled.div`
   flex-wrap: nowrap;
 `;
 function App() {
+const [state,setState] = React.useState("")
   return (
     <FlexWrapper>
       <Navbar></Navbar>
