@@ -16,7 +16,7 @@ const FlexWrapper = styled.div`
 `;
 function App() {
   useEffect(() => {
-    console.log("hello world");
+    console.log("App component");
   }, []);
   const [state, setState] = React.useState("");
   return (
