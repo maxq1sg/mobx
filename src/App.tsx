@@ -12,7 +12,7 @@ const Navbar = styled.nav`
 `;
 const FlexWrapper = styled.div`
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: rap;
 `;
 function App() {
   useEffect(() => {
